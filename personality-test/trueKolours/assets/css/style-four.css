@@ -1,0 +1,43 @@
+.test .page-wrapper {
+    width: min(600px, 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.four-title {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.four-subtitle {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.strong {
+    font-weight: 500;
+}
+
+.four-content {  
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.four-indent {    
+    text-indent: 20px;
+}
+
+.four-justify {
+    text-align: justify;
+}

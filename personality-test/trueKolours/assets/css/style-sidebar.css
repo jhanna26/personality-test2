@@ -1,0 +1,77 @@
+.floating-cta {
+    position: fixed;
+    bottom: 0;
+    right: -330px;
+    padding: 10px;
+    margin: 20px;
+    width: 120px;
+    height: 42px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    box-shadow:
+        0 0 5px 0,
+        0 0 0 7px white,
+        0 0 10px 5px;
+    border-radius: 5px;    
+    z-index: 9;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 37% 34% 36% 26% / 10% 36% 34% 34% ;
+}
+
+
+.floating-cta:hover {
+  transform: scale(1.1);
+}
+
+.floating-cta h1 {
+    font-size: 22px;
+    animation: pulse 3s infinite;
+    font-weight: 400;
+    text-align: center  ;
+}
+
+
+.floating-cta:active {
+    box-shadow: inset 1px 2px 5px,
+    0 0 0 4px wheat,
+    -2px 5px 5px #00000083;
+}
+
+@keyframes pulse {
+    0% {
+        color: black;
+      }
+      25% {
+        color: white;
+      }
+      50% {
+        color: black;
+      }
+      75% {
+        color: white;
+      }
+      100% {
+        color: black;
+      }
+  }
+
+@keyframes moveRightToLeft {
+    0% {right: -335px}
+    100% {right: -110px}
+}
+
+@keyframes moveLeftToRight {
+    0% {right: -110px}
+    100% {right: -335px}
+}
+
+@keyframes CTAmoveLeftToRight {
+    0% {right: -330px}
+    100% {right: 7px}
+}
+
+@keyframes CTAmoveRightToLeft {
+    0% {right: 7px}
+    100% {right: -330px}
+}
